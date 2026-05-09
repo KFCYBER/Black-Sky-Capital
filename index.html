@@ -2102,7 +2102,7 @@ function logout() {
 }
 function showPostAuth() {
   renderNotifications();
-  launchDashboard('1ELp_ABRtz_r2PSSQ5sS_AJPdVwFC8RBWY9RLOOR-WEo','AIzaSyCTd5pfr8gZLttk17YDlnWCHpem93IuzsY');
+  launchDashboard('1ELp_ABRtz_r2PSSQ5sS_AJPdVwFC8RBWY9RLOOR-WEo','AIzaSyDy3jaQ2RiveOVtZUYQ-TITKWGiqGz2wag');
 }
 
 // ── CONFIG ──────────────────────────────────────────────────────
@@ -6600,7 +6600,7 @@ async function syncTickerWithSheet() {
   const tickerContainer = document.getElementById('ticker-content');
   if (!tickerContainer) return;
   const SHEET_ID='1ELp_ABRtz_r2PSSQ5sS_AJPdVwFC8RBWY9RLOOR-WEo';
-  const API_KEY='AIzaSyCTd5pfr8gZLttk17YDlnWCHpem93IuzsY';
+  const API_KEY='AIzaSyDy3jaQ2RiveOVtZUYQ-TITKWGiqGz2wag';
   const TAB_NAME='TickerData';
   try {
     const url=`https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${encodeURIComponent(TAB_NAME)}?key=${API_KEY}&t=${Date.now()}`;
