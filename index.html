@@ -2102,7 +2102,7 @@ function logout() {
 }
 function showPostAuth() {
   renderNotifications();
-  launchDashboard('__SHEETS_ID__','__SHEETS_API_KEY__');
+  launchDashboard('1ELp_ABRtz_r2PSSQ5sS_AJPdVwFC8RBWY9RLOOR-WEo','AIzaSyCTd5pfr8gZLttk17YDlnWCHpem93IuzsY');
 }
 
 // ── CONFIG ──────────────────────────────────────────────────────
@@ -6599,8 +6599,8 @@ setInterval(updateClock,1000); updateClock();
 async function syncTickerWithSheet() {
   const tickerContainer = document.getElementById('ticker-content');
   if (!tickerContainer) return;
-  const SHEET_ID='__SHEETS_ID__';
-  const API_KEY='__SHEETS_API_KEY__';
+  const SHEET_ID='1ELp_ABRtz_r2PSSQ5sS_AJPdVwFC8RBWY9RLOOR-WEo';
+  const API_KEY='AIzaSyCTd5pfr8gZLttk17YDlnWCHpem93IuzsY';
   const TAB_NAME='TickerData';
   try {
     const url=`https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${encodeURIComponent(TAB_NAME)}?key=${API_KEY}&t=${Date.now()}`;
@@ -6625,9 +6625,9 @@ setInterval(syncTickerWithSheet,60000);
 
 // ── EMAILJS CONFIG ────────────────────────────────────────────────
 // Replace these with your actual EmailJS credentials
-const EMAILJS_PUBLIC_KEY  = '__EMAILJS_PUBLIC_KEY__';
-const EMAILJS_SERVICE_ID  = '__EMAILJS_SERVICE_ID__';
-const EMAILJS_TEMPLATE_ID = '__EMAILJS_TEMPLATE_ID__';
+const EMAILJS_PUBLIC_KEY  = 'FgkCtu3VJt0A2BBeC';
+const EMAILJS_SERVICE_ID  = 'service_n8orwfd';
+const EMAILJS_TEMPLATE_ID = 'template_ncucuy8';
 
 // ── DEPOSIT/WITHDRAWAL MODAL ──────────────────────────────────────
 let dwType = null;  // 'deposit' or 'withdrawal'
